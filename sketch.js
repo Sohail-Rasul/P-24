@@ -31,14 +31,16 @@ function draw() {
   background(0);
   
   drawSprites();
-  paper.display();
   ground.display();
   bin.display();
+  paper.display();
+
+  
  keyPressed();
 }
 function keyPressed(){
 	if (keyCode=== UP_ARROW){
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:0.5,y:-3});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:1,y:-5});
 	}
 }
 
